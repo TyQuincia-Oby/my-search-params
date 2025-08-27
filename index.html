@@ -4,59 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Search Params</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
-    <form action="https://www.youtube.com/results" method="GET">
-        <label for="search">Search YouTube:</label>
-        <input type="text" name="search_query" id="search">
-        <button type="submit">Search</button>
-    </form>
-    <form action="https://www.google.com/search">
-        <label for="gsearch">Search Google:</label>
-        <input type="text" name="q" id="gsearch">
-        <button type="submit">Search</button>
-    </form>
-    <form action="https://www.wikihow.com/wikiHowTo">
-        <label for="wikihow">Search WikiHow:</label>
-        <input type="text" name="search" id="wikihow">
-        <button type="submit">Search</button>
-    </form>
-    <form action="https://duckduckgo.com/?q=your+search+here">
-        <label for="duckduckgo">Search Duck Duck Go:</label>
-        <input type="text" name="q" id="duckduckgo">
-        <button type="submit">Search</button>
-    </form>
-        <form action="https://bing.com/?q=your+search+here">
-        <label for="bing">Search Bing:</label>
-        <input type="text" name="search" id="bing">
-        <button type="submit">Search</button>
-    </form>
-    <form action="https://images.pexels.com/photos/3184402/pexels-photo-3184402.jpeg" method="GET">
-        <label for="w">Width:</label>
-        <input type="number" name="w" id="w" value="600">
+<body class="bg-info text-white">
+    <div class="container card text-center mt-5 p-5 bg-light">
+        <h1>Web Search All-In-One Place!</h1>
+        <div class="mb-4">
+            <form action="https://www.youtube.com/results" method="GET" class="row g-3 align-items-center justify-content-center">
+                <label for="search" class="col-2">Find a video on YouTube:</label>
+                <input type="text" class="form-control col" name="search_query" id="search">
+                <button type="submit" class="btn btn-danger col-2">Search</button>
+            </form>
+        </div>
+        <div class="mb-4">
+            <form action="https://www.google.com/search" class="row g-3 align-items-center justify-content-center">
+                <label for="gsearch" class="col-2">Search Google:</label>
+                <input type="text" class="form-control col" name="q" id="gsearch">
+                <button type="submit" class="btn btn-success col-2">Search</button>
+            </form>
+        </div>
+        <div class="mb-4">
+            <form action="https://www.wikihow.com/wikiHowTo" class="row g-3 align-items-center justify-content-center">
+                <label for="wikihow" class="col-2">Learn Something and Search WikiHow:</label>
+                <input type="text" class="form-control col" name="search" id="wikihow">
+                <button type="submit" class="btn btn-dark col-2">Search</button>
+            </form>
+        </div>
+        <div class="mb-4">  
+            <form action="https://duckduckgo.com/?q=your+search+here" class="row g-3 align-items-center justify-content-center">
+                <label for="duckduckgo" class="col-2">Search Duck Duck Go:</label>
+                <input type="text" class="form-control col" name="q" id="duckduckgo">
+                <button type="submit" class="btn btn-warning col-2">Search</button>
+            </form>
+        </div>
+        <div class="mb-4">
+            <form action="https://bing.com/?q=your+search+here" class="row g-3 align-items-center justify-content-center">
+                <label for="bing" class="col-2">Search Bing:</label>
+                <input type="text" class="form-control col" name="search" id="bing">
+                <button type="submit" class="btn btn-info col-2">Search</button>
+            </form>
+        </div>
+        <div class="mb-4">
+        <h2>Let's Play with Images!</h2>
+            <form action="https://images.pexels.com/photos/3184402/pexels-photo-3184402.jpeg" method="GET" class="row g-3 align-items-center justify-content-center">
+                <label for="w" class="col-2">Width:</label>
+                <input type="number" class="form-control col" name="w" id="w" value="600">
 
-        <label for="h">Height:</label>
-        <input type="number" name="h" id="h" value="400">
+                <label for="h" class="col-2">Height:</label>
+                <input type="number" class="form-control col" name="h" id="h" value="400">
 
-        <label for="sepia">Sepia (0–100):</label>
-        <input type="text" name="sepia" id="sepia" value="80">
+                <label for="sepia" class="col-2">Sepia (0–100):</label>
+                <input type="text" class="form-control col" name="sepia" id="sepia" value="80">
 
-        <label for="blur">Blur (0–100):</label>
-        <input type="text" name="blur" id="blur" value="80">
+                <label for="blur" class="col-2">Blur (0–100):</label>
+                <input type="text" class="form-control col" name="blur" id="blur" value="80">
 
-        <label for="face-blur">Blur face (1–100):</label>
-        <input type="text" name="face-blur" id="face-blur" value="80">
+                <label for="face-blur" class="col-2">Blur face (1–100):</label>
+                <input type="text" class="form-control col" name="face-blur" id="face-blur" value="80">
 
-        <label for="fit">Resize Style (crop, clip, etc.):</label>
-        <input type="text" name="fit" id="fit" value="crop">
-        
-        <label for="pad">Padding (in px):</label>
-        <input type="text" name="pad" id="pad" value="50px">
+                <label for="fit" class="col-2">Resize Style (crop, clip, etc.):</label>
+                <input type="text" class="form-control col" name="fit" id="fit" value="crop">
+                
+                <label for="pad" class="col-2">Padding (in px):</label>
+                <input type="text" class="form-control col" name="pad" id="pad" value="50px">
 
-        <label for="bg">Background Color (e.g. bg=ffffff for white):</label>
-        <input type="text" name="bg" id="bg" value="ffffff">
+                <label for="bg" class="col-2">Background Color (e.g. bg=ffffff for white):</label>
+                <input type="text" class="form-control col" name="bg" id="bg" value="ffffff">
 
-        <button type="submit">View Image</button>
-    </form>
+                <button type="submit" class="btn btn-primary col-2">View Image</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
